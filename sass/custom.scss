@@ -1,5 +1,22 @@
 @import "variables.scss";
+@import "fp-background.scss";
+@import "fp-elements.scss";
+@import "fp-main.scss";
+@import "scroll-bar.scss";
+@import "nav.scss";
 
-h1 {
-	color:$color;
+html, body{
+	bottom:0;
+	background:#f2f2f2;
+	color:$off-black;
 }
+
+
+.stripy{
+	background:url(
+
+	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC
+	    ) repeat;
+	
+}
+

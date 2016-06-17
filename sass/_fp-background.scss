@@ -1,0 +1,79 @@
+.fp-bg-placeholder{
+	height:100vh;
+}
+
+.border{
+	position: absolute;
+	top:4%;
+	left:2.5%;
+	height:92%;
+	width:95%;
+	border: 1px solid grey;
+	z-index:999999;
+}
+
+
+.bot-left-tri{
+	position:absolute;
+	background:$triangle-black;
+	height:50%;
+	width:150px;
+	bottom:0;
+	left:0;
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	clip-path: url(../bot-tri.svg#tri-clip);
+
+}
+
+.bot-left-mesh{
+	position:absolute;
+	background:$triangle-black;
+	height:60%;
+	width:180px;
+	bottom:0;
+	left:0;
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	background:url(
+
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC
+		) repeat;
+}
+
+.top-right-tri{
+	position:absolute;
+	background:$triangle-black;
+	height:50%;
+	width:150px;
+	top:0;
+	right:0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.top-right-mesh{
+	position:absolute;
+	background:$triangle-black;
+	height:60%;
+	width:180px;
+	top:0;
+	right:0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+	background:url(
+
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC
+		) repeat;
+}
+
+.test{
+	height:800px;
+	width:200px;
+}
+
+.scroll-arrow{
+	position:absolute;
+	bottom:6%;
+	left:50%;
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+	height:20px;
+	width:200px;
+	background:$triangle-black;
+}

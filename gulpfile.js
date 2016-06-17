@@ -6,6 +6,7 @@ var gulp = require('gulp');
 	jshint = require("gulp-jshint");
 	rename = require('gulp-rename');
 	minifyCss = require('gulp-minify-css');
+	autoprefixer = require('gulp-autoprefixer');
 
 //Server task
 gulp.task("serve", function(event){
@@ -20,6 +21,10 @@ gulp.task("serve", function(event){
 gulp.task('styles', function (){
 	gulp.src('sass/**/custom.scss')
 		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(autoprefixer({
+					browsers: ['last 2 versions'],
+					cascade: false
+				}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifyCss())
 		.pipe(gulp.dest('css/'))

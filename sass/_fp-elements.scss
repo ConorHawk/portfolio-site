@@ -1,0 +1,50 @@
+.title-text{
+	position:absolute;
+	top:8vh;
+	left:10vh;
+	margin:0;
+	font-family: 'Oswald', sans-serif;
+	font-size:50px;
+}
+
+.title-bg{
+	position:absolute;
+	top:12vh;
+	left:0vh;
+	height:30px;
+	width:410px;
+	border-bottom:1px solid black;
+}
+
+.subline-text{
+	position:absolute;
+	top:17vh;
+	left:16vh;
+	margin:0;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+}
+
+.bot-left-text{
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-left:5%;
+	margin-bottom:5%;
+	z-index:999;
+		h2 {
+			background:$hori-gradient;
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+			padding: 5px 0px 5px 50px;
+			font-family: 'Oswald', sans-serif;
+		}
+		p {
+			background:$hori-gradient;
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+			padding: 5px 46px;
+			font-family: 'Oswald', sans-serif;
+		}
+}
+
+
+

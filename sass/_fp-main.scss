@@ -1,0 +1,12 @@
+.fp-main{
+	position:absolute;
+	top:25%;
+	left:40%;
+	height:50%;
+
+	img {
+		max-height:100%;
+		max-width:100%;
+		filter:brightness(.4);
+	}
+}
