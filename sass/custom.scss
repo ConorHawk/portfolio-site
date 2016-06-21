@@ -4,11 +4,22 @@
 @import "fp-main.scss";
 @import "scroll-bar.scss";
 @import "nav.scss";
+@import "pg2-bg.scss";
+@import "pg2-items.scss";
+@import "contact.scss";
+
+section { margin: 0; padding: 0; }
 
 html, body{
 	bottom:0;
 	background:#f2f2f2;
 	color:$off-black;
+	height:100%;
+	margin:0;
+}
+
+body{
+	// opacity:0
 }
 
 
@@ -19,4 +30,10 @@ html, body{
 	    ) repeat;
 	
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
 
