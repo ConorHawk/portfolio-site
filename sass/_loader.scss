@@ -1,0 +1,35 @@
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background:#f2f2f2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.loader-mesh{
+	background:url(
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC
+		) repeat;
+	transform: skewX(20deg);
+	padding:.5em;
+}
+
+.loading-bars{
+	display:flex;
+	background:$off-black;
+	padding:2em 5em;
+	
+}
+
+.bar{
+	height:30px;
+	width:5px;
+	background:#f2f2f2;
+	margin:2px;
+	
+}

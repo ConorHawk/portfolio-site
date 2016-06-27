@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/custom.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="container">
+	<div id="content" class="item-body">
+		
+
+
+<!-- 	<div id="loader-wrapper">
+	    <div id="loader">
+	    <div class="loader-mesh">
+	    	<div class="loading-bars">
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    		<div class="bar"></div>
+	    	</div>
+	    </div>
+	</div>
+	</div> -->
+
+			<div class="border"></div>
+
+		<div class="item-left-tri"></div>
+		<div class="item-left-tri-mesh"></div>
+		<div class="item-right-tri"></div>
+		<div class="item-right-tri-mesh"></div>
+
+		<nav>
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Back</a></li>
+			</ul>
+		</nav>
+
+		<div class="item-content">
+
+			<div class="item-img-wrapper row">
+				<div class="item-img-container col-md-6 col-md-offset-3">
+					<div class="img-grid">
+
+						<img class="item-img " src="img/blog-screen.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="item-text-wrapper row">
+				<h1 class="col-xs-10 col-md-3 col-md-offset-1">KIWI WEBSITE</h1>
+				<p class="col-xs-10 col-md-5 col-md-offset-1 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel deserunt, sapiente aspernatur quas animi eveniet nostrum. Est possimus accusamus illo vel, unde iste harum excepturi deserunt! Nulla vel, maiores.</p>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.visible.min.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/custom.js"></script>
+<script>
+
+$(document).scroll(function(){
+	if ($('.item-1').visible(true)){
+		$(".item-1").addClass("appear");
+	}
+	if ($('.item-2').visible(true)){
+		$(".item-2").addClass("appear");
+	}
+	if ($('.item-3').visible(true)){
+		$(".item-3").addClass("appear");
+	}
+	if ($('.item-4').visible(true)){
+		$(".item-4").addClass("appear");
+	}
+	if ($('.item-5').visible(true)){
+		$(".item-5").addClass("appear");
+	}
+	if ($('.item-6').visible(true)){
+		$(".item-6").addClass("appear");
+	}
+
+
+		
+	
+});
+
+$(".tlt").textillate({ in: { effect: 'rollIn' } });
+
+$(".item-1 > .item-contents").hover(function(){
+	$(".item-text-container1").toggleClass("text-stripe-bg")
+	$(".text-name1").toggleClass("rhombus-slide");
+	$(".top-bar1").toggleClass("top-slider");
+	$(".bot-bar1").toggleClass("bot-slider");
+})
+
+$(".item-2 > .item-contents").hover(function(){
+	$(".item-text-container2").toggleClass("text-stripe-bg")
+	$(".text-name2").toggleClass("rhombus-slide");
+	$(".top-bar2").toggleClass("top-slider");
+	$(".bot-bar2").toggleClass("bot-slider");
+
+
+})
+
+$(".item-3 > .item-contents").hover(function(){
+	$(".item-text-container3").toggleClass("text-stripe-bg")
+	$(".text-name3").toggleClass("rhombus-slide");
+	$(".top-bar3").toggleClass("top-slider");
+	$(".bot-bar3").toggleClass("bot-slider");
+})
+
+$(".item-4 > .item-contents").hover(function(){
+	$(".item-text-container4").toggleClass("text-stripe-bg")
+	$(".text-name4").toggleClass("rhombus-slide");
+	$(".top-bar4").toggleClass("top-slider");
+	$(".bot-bar4").toggleClass("bot-slider");
+})
+
+$(".item-5 > .item-contents").hover(function(){
+	$(".item-text-container5").toggleClass("text-stripe-bg")
+	$(".text-name5").toggleClass("rhombus-slide");
+	$(".top-bar5").toggleClass("top-slider");
+	$(".bot-bar5").toggleClass("bot-slider");
+})
+
+$(".item-6 > .item-contents").hover(function(){
+	$(".item-text-container6").toggleClass("text-stripe-bg")
+	$(".text-name6").toggleClass("rhombus-slide");
+	$(".top-bar6").toggleClass("top-slider");
+	$(".bot-bar6").toggleClass("bot-slider");
+})
+
+
+	
+
+</script>
+
+</body>
+</html>

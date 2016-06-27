@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "loader.scss";
 @import "fp-background.scss";
 @import "fp-elements.scss";
 @import "fp-main.scss";
@@ -7,6 +8,9 @@
 @import "pg2-bg.scss";
 @import "pg2-items.scss";
 @import "contact.scss";
+@import "item-bg.scss";
+@import "sliders.scss";
+
 
 section { margin: 0; padding: 0; }
 
@@ -20,8 +24,8 @@ html, body{
 
 body{
 	// opacity:0
+	transition:1s all;
 }
-
 
 .stripy{
 	background:url(
@@ -33,6 +37,17 @@ body{
 
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+
+.blackOut {
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:black;
+	z-index:9999999;
+	opacity:0;
+	pointer-events: none
 }
 
 

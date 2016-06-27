@@ -1,0 +1,143 @@
+.item-body{
+	background:#f2f2f2;
+}
+
+.item-content{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+
+.item-left-tri{
+	position:absolute;
+	height:390px;
+	width:150px;
+	background:url("../img/item-tri-left");
+	left:0;
+	top:0;
+	transition: .2s all;
+}
+
+.item-left-tri-mesh{
+	position:absolute;
+	height:420px;
+	width:180px;
+	background:url("../img/item-tri-left-mesh.png");
+	left:0;
+	top:0;
+	transition: .3s all;
+}
+
+.item-right-tri{
+	position:absolute;
+	height:390px;
+	width:150px;
+	background:url("../img/item-tri-right.png");
+	bottom:0;
+	right:0;
+}
+
+.item-right-tri-mesh{
+	position:absolute;
+	height:420px;
+	width:180px;
+	background:url("../img/item-tri-right-mesh.png");
+	bottom:0;
+	right:0;
+}
+
+.push-left{
+	transform:translateX(-10px)!important;
+}
+
+.push-right{
+	transform:translateX(10px)!important;
+}
+
+.img-grid{
+	padding:15px;
+	background:url(
+
+		data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC
+		) repeat;
+
+}
+
+.item-img-wrapper{
+	margin-top:auto;
+}
+
+.item-img{
+	max-height:100%;
+	max-width:100%;
+	border:10px solid #262626;
+}
+
+.item-text-wrapper{ 
+	display:flex;
+	align-items:center;
+	margin-top:2em;
+	margin-bottom:auto;
+	h1 {
+		font-size:50px;
+		transform:skew(-20deg);
+		background:$off-black;
+		color:white;
+		font-weight:200;
+		padding:.3em;
+		font-family: 'Oswald', sans-serif;
+		text-align:center;
+	}
+	p {
+		font-family: 'Oswald', sans-serif;
+		font-size:16px;
+	}
+}
+
+.item-body nav ul{
+	position:absolute;
+	right:0;
+}
+
+.page-mover{
+	position:fixed;
+	z-index:99999999999;
+	background:#fcc102;
+	padding:.5em 1em;
+	transform:skew(-20deg)translateX(0px);
+	font-family: 'Oswald', sans-serif;
+	font-size:16px;
+	margin:4em;
+	z-index:999999;
+	transition:.2s all;
+	a{
+		color:black;	
+		i{
+			font-size:26px;
+		}
+	}
+	
+}
+
+.prev{
+	top:0;
+	left:0;
+
+}
+
+.next {
+	bottom:0;
+	right:0;
+}
+
+.page-mover-flip-left{
+	background:#fcc102;
+	transform:skew(-20deg)translateX(10px);
+}
+
+.page-mover-flip-right{
+	background:#fcc102;
+	transform:skew(-20deg)translateX(-10px);
+}
