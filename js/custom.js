@@ -1,3 +1,5 @@
+new Clipboard('.btn');
+
 function slideIn(){
 	setTimeout(function(){
 	 $(".left-slider").addClass("slide-left");
@@ -8,6 +10,8 @@ function slideIn(){
 	$(".left-slider-mesh").addClass("slide-left");
 	$(".right-slider-mesh").addClass("slide-right");
 }
+
+
 
 function slideOut(){
 
@@ -46,11 +50,16 @@ function transition(){
 		  $("#content").remove();
 		  $('#container').load(url + ' #content');
 		  setTimeout(function(){
+		  	window.location = "#my-work";
+		  	scrollReveal();
+		  	slideOut();
+		  	goFlickity();
 		  	previousHover();
 		  	bodyFadeOut();
-		  	window.location = "#my-work";
-		    slideOut();
+		  	contactInit();
+		    
 		    hoverTime();
+		    
 
 		  }, 100); 
 		}, 1000); 
@@ -124,34 +133,78 @@ function previousHover(){
 		$(".item-left-tri,.item-left-tri-mesh").toggleClass("push-left");
 		$(".prev").toggleClass("page-mover-flip-left");
 	});
-	$(".next").hover(function(){
+	
+	$(".next2").hover(function(){
 		$(".item-right-tri,.item-right-tri-mesh").toggleClass("push-right");
-		$(".next").toggleClass("page-mover-flip");
+		$(".next2").toggleClass("page-mover-flip-right");
 	});
+
 }
 
 previousHover();
 
+function goFlickity(){
+	$('.carousel').flickity({
+	  // options
+	  wrapAround: true,
+	  imagesLoaded: true,
+	  cellAlign: 'center',
+
+	  contain: true
+	});
+}
+
+goFlickity();
 
 
+function contactInit(){
+	$(".contact-mail").on("click",function(){
+		$(".contact-rhombus").toggleClass("contact-rhombus-settle");
+	});
+
+	$(".contact-mail").hover(function(){
+		$(".cls-3").toggleClass("svg-fill");
+	});
+
+	$(".contact-copy").on("click",function(){
+		$(".contact-confirm").addClass("contact-confirm-slide");
+		setTimeout(function(){
+		$(".contact-confirm").removeClass("contact-confirm-slide");
+		}, 3000);
+	});
+}
+
+contactInit();
 
 
+function scrollReveal(){
 
-// $(document).on("click",function(){
+	$(document).scroll(function(){
+		if ($('.item-1').visible(true)){
+			$(".item-1").addClass("appear");
+		}
+		if ($('.item-2').visible(true)){
+			$(".item-2").addClass("appear");
+		}
+		if ($('.item-3').visible(true)){
+			$(".item-3").addClass("appear");
+		}
+		if ($('.item-4').visible(true)){
+			$(".item-4").addClass("appear");
+		}
+		if ($('.item-5').visible(true)){
+			$(".item-5").addClass("appear");
+		}
+		if ($('.item-6').visible(true)){
+			$(".item-6").addClass("appear");
+		}
+		if ($('.contact-rhombus').visible(true)){
+			setTimeout(function(){
+				$(".contact-rhombus").addClass("contact-rhombus-slide");
+			}, 500); 
+		}
+	});
 
-// 	setTimeout(function(){
-// 	  $(".left-slider").toggleClass("slide-left");
-// 	  $(".right-slider").toggleClass("slide-right");
-// 	}, 100);    		
-// 	$(".left-slider-mesh").toggleClass("slide-left");
-// 	$(".right-slider-mesh").toggleClass("slide-right");
-// });
+}
 
-// $(document).on("click",function(){
-// 	slideIn();
-// 	setTimeout(function(){
-// 	  slideOut()
-// 	}, 1000); 
-
-// });
-
+scrollReveal();

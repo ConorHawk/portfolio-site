@@ -1,0 +1,31 @@
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  background: $off-black;
+  border-radius:0px;
+  transform:skew(20deg)scale(1);
+  margin:1em;
+  transition:.1s all;
+}
+.flickity-prev-next-button:hover {
+	border:5px solid #fec300;
+	background: $off-black;
+  transform:skew(20deg)scale(1.1);
+}
+
+.flickity-prev-next-button:active {
+
+  transform:skew(20deg)scale(.9);
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}

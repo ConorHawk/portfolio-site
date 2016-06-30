@@ -1,0 +1,41 @@
+.item-nav{
+	position:absolute;
+	transform:rotate(-90deg)translateY(0px);
+	right:0;
+	top:0;
+	padding:1em;
+	/*border-bottom:1px solid #262626;*/
+	margin-right:70px;
+
+
+	ul{
+			display:flex;
+			border-bottom:1px solid grey;
+			padding:0 3em;
+		li{
+			display:inline-block;
+	
+			a{
+				padding:0 1em;
+				font-size:14px;
+				color:#262626;
+				font-family:$my-font;
+				background-image: linear-gradient(to right,
+				                                      #c86235,
+				                                      #fcc102 49%,
+				                                      transparent 49%,
+				                                      transparent);
+				background-position: 100% 0;
+				background-size: 200% 100%;
+				transition: .2s all;
+				&:hover{
+					text-decoration:none;
+					color:white;					
+					background-position: 0 0;
+				}
+
+			}
+			
+		}
+	}
+}
